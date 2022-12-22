@@ -65,9 +65,6 @@ export default {
       this.inputText = e.target.value
     }
   },
-  components: {
-    //components
-  },
 };
 </script>
 
