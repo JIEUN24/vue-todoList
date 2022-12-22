@@ -61,7 +61,6 @@ export default {
       this.count--;
     },
     typing(e) {
-      // console.log(e.target.value)
       this.inputText = e.target.value
     }
   },
