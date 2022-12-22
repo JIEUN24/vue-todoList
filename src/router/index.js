@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import TodoView from "../views/TodoView.vue";
-import DetailView from "../views/DetailView.vue";
+import DetailView from "../views/TodoView2.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,9 +20,9 @@ const router = createRouter({
       component: TodoView,
     },
     {
-      path: "/detail",
-      name: "detail",
-      component: () => import("../views/DetailView.vue"),
+      path: "/todo2",
+      name: "todo2",
+      component: () => import("../views/TodoView2.vue"),
     },
   ],
 });
