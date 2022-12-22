@@ -8,9 +8,12 @@ const todoText = ref('')
 
 // 속성 값을 변경하고 업데이트 할 수 있는 함수.
 function addTodo() {
+  if(todoText.value === "") {
+    alert('내용을 입력하세요!')
+    return;
+  }
   todoList.value = [...todoList.value, {id: todoList.value.length + 1, content: todoText.value, isDone:false}]
   todoText.value = ""
-  console.log(todoList.value)
 }
 
 function doneTodo(id) {
