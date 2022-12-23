@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import TodoView from "../views/TodoView.vue";
-import DetailView from "../views/TodoView2.vue";
+import CompoTest from "../views/CompoTest.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +23,11 @@ const router = createRouter({
       path: "/todo2",
       name: "todo2",
       component: () => import("../views/TodoView2.vue"),
+    },
+    {
+      path: "/compo",
+      name: "compo",
+      component: CompoTest,
     },
   ],
 });
